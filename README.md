@@ -76,4 +76,4 @@ Each attack can be run independently using ```python attacks/<attack_name>.py```
 
 ![Attacks](attacks.png)
 
-![Sim logs](sim logs.png)
+![Sim logs](simlogs.png)
