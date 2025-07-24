@@ -48,16 +48,21 @@ python attacks/replay_attack.py
 
 ## Attack Spectrum
 You can simulate the following attack types:
-- Replay Attack
-- Sybil Attack
-- Constant Value Attack
-- Out-of-Range Attack
-- Blackhole Attack
-- Sinkhole Attack
-- Hello Flood Attack
-- DoS (Denial of Service)
-- Routing Attack
-- Man-in-the-Middle (MITM)
+
+| **Attack Type**                 | **Category** | **Description**                                                                                            |
+| ------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------- |
+| **1. Denial of Service (DoS)**  | Critical     | Floods the network to exhaust resources or bandwidth, making legitimate communication impossible.          |
+| **2. Man-in-the-Middle (MITM)** | Critical     | Intercepts and possibly alters data between two nodes without their knowledge.                             |
+| **3. Sybil Attack**             | High         | A malicious node adopts multiple fake identities to influence consensus or voting mechanisms.              |
+| **4. Constant Value Attack**    | Medium       | Repeatedly sends fixed sensor readings to mislead anomaly detection or simulate sensor malfunction.        |
+| **5. Replay Attack**            | High         | Resends previously valid packets with old timestamps to impersonate legitimate data.                       |
+| **6. Blackhole Attack**         | Critical     | A malicious node absorbs and discards packets, preventing them from reaching the destination.              |
+| **7. Hello Flood Attack**       | High         | Sends excessive HELLO packets to mislead nodes into believing the attacker is a valid neighbor.            |
+| **8. Out-of-Range Attack**      | Medium       | Sends sensor values outside the physical constraints (e.g., temperature of 200°C), triggering false logic. |
+| **9. Routing Attack**           | High         | Manipulates routing paths to redirect traffic through malicious nodes or loops.                            |
+| **10. Sinkhole Attack**         | Critical     | Attracts all nearby traffic by falsely advertising a high-quality route, then drops or alters the data.    |
+
+
 Each attack can be run independently using ```python attacks/<attack_name>.py```
 
 ## Frontend Interface
