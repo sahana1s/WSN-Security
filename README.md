@@ -71,3 +71,9 @@ Each attack can be run independently using ```python attacks/<attack_name>.py```
 - Real-time Log View: Chronological feed of WSN behavior, attacks, and decisions.
 - Network Topology: Visual indicator of node status (healthy, offline, compromised).
 - Blockchain View: Track which events are recorded on-chain.
+
+![MQTT](MQTT.png)
+
+![Attacks](attacks.png)
+
+![Sim logs](sim logs.png)
