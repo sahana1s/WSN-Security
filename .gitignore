@@ -1,0 +1,17 @@
+
+venv/
+**/__pycache__/
+attacks/__init__.py
+*.zip
+*.txt
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif  
+*.docx
+*.ipynb
+api/
+static/
+logger.py
+visualizer.py
